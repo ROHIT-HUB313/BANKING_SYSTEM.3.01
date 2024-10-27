@@ -31,9 +31,6 @@ public class SecurityConfig {
 				.httpBasic(Customizer.withDefaults());
 
 		return http.build();
-
-		// .formLogin(formLogin -> formLogin.loginPage("/login").permitAll())
-		// .logout(logout -> logout.permitAll());
 	}
 
 	@Bean
@@ -56,23 +53,3 @@ public class SecurityConfig {
 		return new BCryptPasswordEncoder();
 	}
 }
-
-//	@Bean
-//	public InMemoryUserDetailsManager userDetailsService() {
-//		UserDetails admin = User.withUsername("admin").password(passwordEncoder().encode("adminpassword"))
-//				.roles("ADMIN").build();
-//
-//		UserDetails user = User.withUsername("user").password(passwordEncoder().encode("userpassword")).roles("USER")
-//				.build();
-//
-//		return new InMemoryUserDetailsManager(admin, user);
-//	}
-//
-
-//	@Bean
-//	public AuthenticationProvider authenticate(String username) {
-//		DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-//		provider.setPasswordEncoder(new BCryptPasswordEncoder(12));
-//		provider.setUserDetailsService(userDetailsService);
-//		return provider;
-//	}
