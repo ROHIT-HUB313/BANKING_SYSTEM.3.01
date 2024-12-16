@@ -1,0 +1,5 @@
+# Created at 2024-12-04T10:42:33.702
+Boot Manifest-JAR contains absolute paths in classpath 'D:\INTELLIJ-WORKSPACE\BANKING_SYSTEM.3.01-main\BANKING_SERVER.31.10.24\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
